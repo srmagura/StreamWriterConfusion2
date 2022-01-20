@@ -22,7 +22,7 @@ public class TestController : ControllerBase
     //
     // You may have to try multiple times for it to fail. It seems to work 100% of the
     // time when making the request from Postman, but usually fails (with no clear 
-    // error message) on when visiting the URL through Chrome on Windows.
+    // error message) when visiting the URL through Chrome on Windows.
     [HttpGet]
     [Produces("text/plain")]
     public async Task NormalDispose()
