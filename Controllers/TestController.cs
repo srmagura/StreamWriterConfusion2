@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace StreamWriterConfusion.Controllers;
+namespace StreamWriterConfusion2.Controllers;
 
 [Route("api/[Controller]/[Action]")]
 public class TestController : ControllerBase
