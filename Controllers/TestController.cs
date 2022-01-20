@@ -19,6 +19,10 @@ public class TestController : ControllerBase
 
     // http://localhost:5105/api/test/normalDispose
     // THIS IS THE CASE THAT DOESN'T WORK AS EXPECTED
+    //
+    // You may have to try multiple times for it to fail. It seems to work 100% of the
+    // time when making the request from Postman, but usually fails (with no clear 
+    // error message) on when visiting the URL through Chrome on Windows.
     [HttpGet]
     [Produces("text/plain")]
     public async Task NormalDispose()
@@ -32,7 +36,7 @@ public class TestController : ControllerBase
         sw.Dispose();
     }
 
-    // http://localhost:5105/api/test/disposeAsync
+    // http://localhost:5105/api/test/asyncDispose
     // This case works
     [HttpGet]
     [Produces("text/plain")]
